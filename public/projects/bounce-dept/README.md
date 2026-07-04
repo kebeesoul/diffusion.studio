@@ -5,13 +5,21 @@ A Lottie/Skottie animation of the **BOUNCE DEPT.** wordmark, built with the
 
 ![preview](../../../preview/bounce-dept.gif)
 
-## Motion beats (30 fps, 152 frames ≈ 5s)
+## Motion beats (60 fps, 372 frames ≈ 6.2s)
 
-1. **Spring pulse ×4** — logo springs small→big four times in place.
-2. **Tumble roll** — rolls to the left with bounces, then rolls back and finds
-   its place (center).
-3. **Settle pop** — a small overshoot grow as it locks up.
-4. **Cat peek** — a cat pokes its face out above the **B**, then ducks back in.
+1. **Spring pulse ×4** — logo springs small→big four times in place, each pop
+   with an elastic overshoot.
+2. **Shrink + tumble roll** — logo shrinks small, then bounces along the floor
+   to the left (squash on ground contact, stretch at apex) while spinning.
+3. **Roll back + elastic land** — rolls back to center, growing to full size and
+   landing with a squash-and-settle overshoot.
+4. **Settle pop** — a small secondary grow as it locks up.
+5. **Cat peek** — a cat pops its face out above the **B** with a bouncy
+   overshoot, then ducks back in.
+
+All hero motion (position, scale, rotation) is **physics-baked per frame** with
+easing/bounce/squash functions in the generator, so playback reads naturally
+rather than stepping between sparse keyframes.
 
 ## Files
 
